@@ -191,10 +191,10 @@ public class BSTree<K extends Comparable<K>, V> extends BTree<K, V> {
             if (listener != null) {
                 if (this instanceof RBTree ) {
                     if (node.isBlack()) {
-                        listener.fixAfterDeletion(node, true);
+                        listener.fixAfterDeletion(node, false);
                     }
                 } else {
-                    listener.fixAfterDeletion(node, true);
+                    listener.fixAfterDeletion(node, false);
                 }
             }
             if (node.parent != null) {

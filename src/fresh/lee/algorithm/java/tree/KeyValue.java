@@ -28,5 +28,4 @@ public class KeyValue<K, V> {
     public String toString() {
         return "<" + key + "," + value + ">";
     }
-
 }

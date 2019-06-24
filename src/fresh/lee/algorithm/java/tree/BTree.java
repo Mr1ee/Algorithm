@@ -53,8 +53,8 @@ public class BTree<K extends Comparable<K>, V> implements ITreeAction<K, V> {
 
         Node<K, V> parent = new Node<>(preOrder.get(firstIndex).key, preOrder.get(firstIndex).value);
         int position = inOrder.indexOf(preOrder.get(firstIndex));
-        parent.setLeft(buildTreeWithPreAndInSequenceInternal(preOrder.subList(1, position + 1), inOrder.subList(0, position)));
-        parent.setRight(buildTreeWithPreAndInSequenceInternal(preOrder.subList(position + 1, size), inOrder.subList(position + 1, size)));
+        parent.left = buildTreeWithPreAndInSequenceInternal(preOrder.subList(1, position + 1), inOrder.subList(0, position));
+        parent.right = buildTreeWithPreAndInSequenceInternal(preOrder.subList(position + 1, size), inOrder.subList(position + 1, size));
         return parent;
     }
 
@@ -74,8 +74,8 @@ public class BTree<K extends Comparable<K>, V> implements ITreeAction<K, V> {
         }
         Node<K, V> parent = new Node<>(postOrder.get(lastIndex).key, postOrder.get(lastIndex).value);
         int position = inOrder.indexOf(postOrder.get(lastIndex));
-        parent.setLeft(buildTreeWithPostAndInSequenceInternal(postOrder.subList(0, position), inOrder.subList(0, position)));
-        parent.setRight(buildTreeWithPostAndInSequenceInternal(postOrder.subList(position, lastIndex), inOrder.subList(position + 1, size)));
+        parent.left = buildTreeWithPostAndInSequenceInternal(postOrder.subList(0, position), inOrder.subList(0, position));
+        parent.right = buildTreeWithPostAndInSequenceInternal(postOrder.subList(position, lastIndex), inOrder.subList(position + 1, size));
         return parent;
     }
 
