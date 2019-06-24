@@ -1,6 +1,5 @@
 package fresh.lee.algorithm.kotlin.tree
 
-import com.lee.leewanandroid.algorithm.kotin.tree.*
 import fresh.lee.algorithm.kotlin.tree.node.Node
 import fresh.lee.algorithm.kotlin.tree.node.TNode
 
