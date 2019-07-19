@@ -153,7 +153,7 @@ class RedBlackTree : BinarySearchTree<Int>() {
              *  So we need left rotate p, and adjust color. This step ensure brother color is BLACK,
              *  so we are ready for next step!
              *  因为[b]已经是红色的，所以不可能去减少p的右子树的黑色节点，因此增加p的左子树的黑色节点数，
-             *  所以需要围绕p左旋，并且调整颜色。
+             *  所以需要围绕p左旋，并且调整颜色。（其实这个时候 到x节点路径下的黑色节点还是少一个，所以还需要继续下面的步骤）
              *      p                       [b]                 b
              *     / \        b left        / \     color      / \
              *    x  [b]     rotation      p  br  transform  [p] br
