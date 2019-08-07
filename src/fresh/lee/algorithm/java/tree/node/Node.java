@@ -106,9 +106,11 @@ public class Node<K, V> {
     }
 
     /**
+     * 前驱节点val值小于该节点val值并且值最大的节点
+     * 后继节点val值大于该节点val值并且值最小的节点
      * @return 前驱结点
      */
-    public Node<K, V> predecessor() {
+    public Node<K, V> successor() {
         if (this.right != null) {
             Node<K, V> p = this.right;
             while (p.left != null)
@@ -126,9 +128,11 @@ public class Node<K, V> {
     }
 
     /**
+     * 前驱节点val值小于该节点val值并且值最大的节点
+     * 后继节点val值大于该节点val值并且值最小的节点
      * @return 后继节点
      */
-    public Node<K, V> successor() {
+    public Node<K, V> predecessor() {
         if (this.left != null) {
             Node<K, V> p = this.left;
             while (p.right != null)

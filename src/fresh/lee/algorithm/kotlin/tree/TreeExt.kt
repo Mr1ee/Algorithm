@@ -57,7 +57,7 @@ fun Node<Int>?.balance(): Int {
  * find and return successor node
  */
 @Suppress("UNCHECKED_CAST")
-fun <T, N : Node<T>> N.successor(): N {
+fun <T, N : Node<T>> N.predecessor(): N {
     var p = this
     var child: Node<T>? = this.left ?: return this
     while (child?.right != null) {
@@ -77,7 +77,7 @@ fun <T, N : Node<T>> N.successor(): N {
  * find and return predecessor node, and reconnect tree
  */
 @Suppress("UNCHECKED_CAST")
-fun <T, N : Node<T>> N.predecessor(): N {
+fun <T, N : Node<T>> N.successor(): N {
     var p = this
     var child: Node<T>? = this.right ?: return this
     while (child?.left != null) {
@@ -97,7 +97,7 @@ fun <T, N : Node<T>> N.predecessor(): N {
  * find and return predecessor node, but not reconnect tree
  */
 @Suppress("UNCHECKED_CAST")
-fun <T, N : TNode<T>> N.predecessor1(): N? {
+fun <T, N : TNode<T>> N.predecessor(): N? {
     return if (this.right != null) {
         var p = this.right as N
         while (p.left != null)

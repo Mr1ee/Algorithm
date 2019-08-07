@@ -139,7 +139,7 @@ public class BSTree<K extends Comparable<K>, V> extends BTree<K, V> {
                 //待删除结点左右孩子结点均不为null，这个时候可以去找待删除结点的后继节点，或者前驱结点，
                 //根据二叉排序树的定义后继节点就是左子树的最大节点，前驱结点就是右子树的最小节点
                 //找到前驱结点, 交换前驱结点与node的值,然后删除前驱结点
-                Node<K, V> predecessorNode = node.predecessor();
+                Node<K, V> predecessorNode = node.successor();
                 //将前驱结点的值交给node
                 node.value = predecessorNode.value;
                 node.key = predecessorNode.key;
@@ -154,7 +154,7 @@ public class BSTree<K extends Comparable<K>, V> extends BTree<K, V> {
 
     private void removeInternal(Node<K, V> node) {
         if (node.left != null && node.right != null) {
-            Node<K, V> s = node.predecessor();
+            Node<K, V> s = node.successor();
             node.key = s.key;
             node.value = s.value;
             node = s;

@@ -89,7 +89,7 @@ class RedBlackTree : BinarySearchTree<Int>() {
         // if delete node x has two children. then find its successor or predecessor,
         // then set exchange x and s value, and now we actually delete s node.
         if (x.left != null && x.right != null) {
-            val s = x.predecessor1() ?: return
+            val s = x.predecessor() ?: return
             x.value = s.value
             x = s
         }

@@ -100,7 +100,7 @@ open class BSTree<T : Comparable<T>> : BTree<T>() {
                     //待删除结点左右孩子结点均不为null，这个时候可以去找待删除结点的后继节点，或者前驱结点，
                     //根据二叉排序树的定义后继节点就是左子树的最大节点，前驱结点就是右子树的最小节点
                     //找到前驱结点, 交换前驱结点与node的值,然后删除前驱结点
-                    val predecessorNode = predecessor(node)
+                    val predecessorNode = successor(node)
                     //将前驱结点的值交给node
                     node.value = predecessorNode.value
                     //删除 前驱节点
@@ -129,10 +129,12 @@ open class BSTree<T : Comparable<T>> : BTree<T>() {
     }
 
     /**
+     * 前驱节点val值小于该节点val值并且值最大的节点
+     * 后继节点val值大于该节点val值并且值最小的节点
      * find 后继节点
      */
     @Suppress("unused")
-    fun successor(node: Node<T>): Node<T> {
+    fun predecessor(node: Node<T>): Node<T> {
         var p = node
         var child = node.left!!
         while (child.right != null) {
@@ -149,10 +151,12 @@ open class BSTree<T : Comparable<T>> : BTree<T>() {
     }
 
     /**
+     * 前驱节点val值小于该节点val值并且值最大的节点
+     * 后继节点val值大于该节点val值并且值最小的节点
      * find 前驱节点
      */
     @Suppress("unused")
-    fun predecessor(node: Node<T>): Node<T> {
+    fun successor(node: Node<T>): Node<T> {
         var p = node
         var child = node.right!!
         while (child.left != null) {
