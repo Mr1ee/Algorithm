@@ -94,27 +94,6 @@ fun <T, N : Node<T>> N.successor(): N {
 }
 
 /**
- * find and return predecessor node, but not reconnect tree
- */
-@Suppress("UNCHECKED_CAST")
-fun <T, N : TNode<T>> N.predecessor(): N? {
-    return if (this.right != null) {
-        var p = this.right as N
-        while (p.left != null)
-            p = p.left as N
-        p
-    } else {
-        var p = this.parent as N?
-        var ch = this
-        while (p != null && ch === p.right) {
-            ch = p
-            p = p.parent as N?
-        }
-        p
-    }
-}
-
-/**
  * return red black node is black or not
  */
 fun RBNode?.isBlack(): Boolean {
