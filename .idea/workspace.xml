@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6fd871-ce72-4d95-8794-7672dd17b846" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LCS">
+  <component name="RunManager" selected="Application.LIS">
     <configuration name="DuplicateNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.DuplicateNumber" />
       <module name="Algorithm" />
@@ -85,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.Main" />
+    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.LIS" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -126,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LIS" />
         <item itemvalue="Application.LCS" />
         <item itemvalue="Application.Question_4_p_44" />
         <item itemvalue="Application.Question_57_1_sum_s" />
         <item itemvalue="Application.DuplicateNumber" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
