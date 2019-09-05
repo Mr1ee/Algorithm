@@ -17,6 +17,19 @@ public class KmpTest {
 
         String t = "abaabaabbabaaabaabbabaab";
         String p = "abaabbabaab";
+        Integer a = 13;
+        Integer a2 = 13;
+
+        Integer a3 = 133;
+        Integer a4 = 133;
+
+        Integer a5 = 2147483647;
+        Integer a6 = 2147483647;
+        System.out.println(a == a2);
+        System.out.println(a3 == a4);
+        System.out.println(a5 == a6);
+        // true false false
+        // IntegerCache [-128,127]
 
         System.out.println(KMP(t, p));
     }
