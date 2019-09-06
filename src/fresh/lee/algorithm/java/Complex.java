@@ -36,7 +36,7 @@ public class Complex {
      * @param r     极坐标半径
      * @param theta 极坐标角度
      */
-    public static Complex valueOfPalor(double r, double theta) {
+    public static Complex valueOfPolar(double r, double theta) {
         return new Complex(r * Math.cos(theta), r * Math.cos(theta));
     }
 
