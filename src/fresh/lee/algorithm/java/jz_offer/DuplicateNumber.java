@@ -23,7 +23,7 @@ public class DuplicateNumber {
         }
         Log.getInstance().print(arr);
 
-        int exahngeCount = 0;
+        int exchangeCount = 0;
         for (int i = 0; i < numbers.length; i++) {
             while (numbers[i] != i) {
                 if (numbers[i] == numbers[numbers[i]]) {
@@ -34,11 +34,11 @@ public class DuplicateNumber {
                 int temp = numbers[i];
                 numbers[i] = numbers[temp];
                 numbers[temp] = temp;
-                exahngeCount++;
+                exchangeCount++;
             }
         }
 
-        Log.getInstance().print(exahngeCount);
+        Log.getInstance().print(exchangeCount);
         return -1;
     }
 

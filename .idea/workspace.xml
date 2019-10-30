@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6fd871-ce72-4d95-8794-7672dd17b846" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/JosephusRing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/DuplicateNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/DuplicateNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/JosephusRing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/JosephusRing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/PathInTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/PathInTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JosephusRing">
+  <component name="RunManager" selected="Application.PathInTree">
     <configuration name="JosephusRing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.JosephusRing" />
       <module name="Algorithm" />
@@ -126,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PathInTree" />
         <item itemvalue="Application.JosephusRing" />
         <item itemvalue="Application.ReverseString" />
         <item itemvalue="Application.SeriesSumS" />
-        <item itemvalue="Application.PathInTree" />
         <item itemvalue="Application.KmpTest" />
       </list>
     </recent_temporary>

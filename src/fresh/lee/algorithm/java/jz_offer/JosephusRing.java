@@ -1,6 +1,20 @@
 package fresh.lee.algorithm.java.jz_offer;
 
 public class JosephusRing {
+
+    public static int addWithBit(int n1, int n2) {
+        int sum, carry;
+        do {
+            sum = n1 ^ n2;
+            carry = (n1 & n2) << 1;
+            n1 = sum;
+            n2 = carry;
+
+            System.out.println("n1 = " + n1 + ", n2 = " + n2);
+        } while (n2 != 0);
+        return n1;
+    }
+
     /**
      * @param n 总人数
      * @param m 第m个踢出去
@@ -70,5 +84,8 @@ public class JosephusRing {
         for (int i = 1; i <= sum; i++) {
             System.out.println("第" + i + "次出环的编号是 ：" + loopMethod(sum, m, i));
         }
+
+        int a = 3, b = 5;
+        System.out.println(a + " + " + b + " = " + addWithBit(a, b));
     }
 }
