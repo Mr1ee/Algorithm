@@ -39,6 +39,7 @@ class QuickSort : ISort<Int> {
             data.swap(low, high)
         }
         data.swap(start, high)
+        println("high = $high")
         println("quick sort, partition end : $data\n\n")
         return high
     }

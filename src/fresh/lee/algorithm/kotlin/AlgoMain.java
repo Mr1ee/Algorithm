@@ -1,5 +1,7 @@
 package fresh.lee.algorithm.kotlin;
 
+import fresh.lee.algorithm.kotlin.sort.QuickSort;
+import fresh.lee.algorithm.kotlin.sort.interfaces.ISort;
 import fresh.lee.algorithm.kotlin.tree.AVLTree;
 import fresh.lee.algorithm.kotlin.tree.BTree;
 
@@ -27,8 +29,8 @@ public class AlgoMain {
 
     public static void main(String[] args) {
 
-//        ISort<Integer> algo = new BubbleSort();
-//        System.out.println(algo.sort(data));
+        ISort<Integer> algo = new QuickSort();
+        System.out.println(algo.sort(data));
 //
 //        ISort<Integer> shellSort = new ShellSort();
 //        System.out.println(shellSort.sort((ArrayList<Integer>) data.clone()) + "\n\n");

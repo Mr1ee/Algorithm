@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9b6fd871-ce72-4d95-8794-7672dd17b846" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/DuplicateNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/DuplicateNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/JosephusRing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/JosephusRing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/PathInTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/java/jz_offer/PathInTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/kotlin/AlgoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/kotlin/AlgoMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fresh/lee/algorithm/kotlin/sort/QuickSort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fresh/lee/algorithm/kotlin/sort/QuickSort.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PathInTree">
+  <component name="RunManager" selected="Application.AlgoMain">
+    <configuration name="AlgoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.kotlin.AlgoMain" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fresh.lee.algorithm.kotlin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JosephusRing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.JosephusRing" />
       <module name="Algorithm" />
@@ -74,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KmpTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.KmpTest" />
+    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.LIS" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fresh.lee.algorithm.java.*" />
+          <option name="PATTERN" value="fresh.lee.algorithm.java.jz_offer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,26 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeriesSumS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fresh.lee.algorithm.java.jz_offer.SeriesSumS" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fresh.lee.algorithm.java.jz_offer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AlgoMain" />
         <item itemvalue="Application.PathInTree" />
+        <item itemvalue="Application.LIS" />
         <item itemvalue="Application.JosephusRing" />
         <item itemvalue="Application.ReverseString" />
-        <item itemvalue="Application.SeriesSumS" />
-        <item itemvalue="Application.KmpTest" />
       </list>
     </recent_temporary>
   </component>
