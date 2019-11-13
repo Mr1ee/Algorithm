@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.singleton;
+package fresh.lee.algorithm.java.design_pattern.singleton;
 
 /**
  * 双重锁懒汉模式(Double Check Lock)

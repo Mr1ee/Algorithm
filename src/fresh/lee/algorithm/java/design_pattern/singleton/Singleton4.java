@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.singleton;
+package fresh.lee.algorithm.java.design_pattern.singleton;
 
 /**
  * 静态 内部类 单例模式

@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.singleton;
+package fresh.lee.algorithm.java.design_pattern.singleton;
 
 /**
  * 懒汉模式：，不能应用多线程
