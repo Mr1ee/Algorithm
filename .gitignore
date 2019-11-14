@@ -32,3 +32,6 @@ dependency-reduced-pom.xml
 *.idea/
 *out/
 .idea/*
+/.idea
+/.idea/misc.xml
+/.idea/workspace.xml
