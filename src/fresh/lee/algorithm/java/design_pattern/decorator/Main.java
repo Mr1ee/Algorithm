@@ -13,7 +13,7 @@ public class Main {
         Person xc = new Person("小菜");
         Slipper slipper = new Slipper();
         BigTrouser bigTrouser = new BigTrouser();
-        Tshirt tshirt = new Tshirt();
+        TShirt tshirt = new TShirt();
 
         System.out.println("第一种装扮的小菜");
         tshirt.decorate(xc);

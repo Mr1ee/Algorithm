@@ -1,6 +1,6 @@
 package fresh.lee.algorithm.java.design_pattern.decorator;
 
-public class Tshirt extends Finery {
+public class TShirt extends Finery {
 
     @Override
     public void show() {

@@ -10,16 +10,16 @@ public class Pursuit implements Action {
 
     @Override
     public void giveDolls() {
-        System.out.println(girl + " 送你洋娃娃");
+        System.out.println(girl + "， 送你洋娃娃");
     }
 
     @Override
     public void giveFlowers() {
-        System.out.println(girl + " 送你花");
+        System.out.println(girl + "， 送你花");
     }
 
     @Override
     public void giveChocolate() {
-        System.out.println(girl + " 送你巧克力");
+        System.out.println(girl + "， 送你巧克力");
     }
 }
