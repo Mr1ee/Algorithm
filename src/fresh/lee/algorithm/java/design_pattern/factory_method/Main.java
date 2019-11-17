@@ -1,41 +1,25 @@
 package fresh.lee.algorithm.java.design_pattern.factory_method;
 
-import fresh.lee.algorithm.java.design_pattern.factory_method.factory.AddFactory;
-import fresh.lee.algorithm.java.design_pattern.factory_method.factory.DivFactory;
-import fresh.lee.algorithm.java.design_pattern.factory_method.factory.MulFactory;
-import fresh.lee.algorithm.java.design_pattern.factory_method.factory.SubFactory;
-import fresh.lee.algorithm.java.design_pattern.factory_method.operation.Div;
-import fresh.lee.algorithm.java.design_pattern.factory_method.operation.IOperation;
-import fresh.lee.algorithm.java.design_pattern.factory_method.operation.Mul;
-import fresh.lee.algorithm.java.design_pattern.singleton.Singleton;
-
 public class Main {
 
+    /**
+     * 工厂方法(factory method)模式定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。
+     * 工厂方法让类的实例化推迟到子类
+     */
     public static void main(String[] args) {
-        AddFactory singleton = new Singleton<AddFactory>() {
-            @Override
-            protected AddFactory create() {
-                return new AddFactory();
-            }
-        }.get();
 
-        double a = 12;
-        double b = 6;
+        PizzaStore nyPizzaStore = new NYPizzaStore();
+        PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
 
-        IOperation op = singleton.createOperation();
-        System.out.println(a + "+" + b + " = " + op.op(a, b));
+        Pizza pizza = nyPizzaStore.orderPizza(Pizza.Type.VEGGLE);
+        System.out.println("xiao wang order " + pizza.getName());
 
-        op = new SubFactory().createOperation();
-        System.out.println(a + "-" + b + " = " + op.op(a, b));
+        System.out.println();
+        Pizza nyCheesePizza = nyPizzaStore.orderPizza(Pizza.Type.CHEESE);
+        System.out.println("xiao zhang order " + nyCheesePizza.getName());
 
-        op = new MulFactory().createOperation();
-        System.out.println(a + "*" + b + " = " + op.op(a, b));
-
-        op = new DivFactory().createOperation();
-        System.out.println(a + "/" + b + " = " + op.op(a, b));
-
-        b = 0;
-        op = new DivFactory().createOperation();
-        System.out.println(a + "/" + b + " = " + op.op(a, b));
+        System.out.println();
+        Pizza chicagoPizza = chicagoPizzaStore.orderPizza(Pizza.Type.CHEESE);
+        System.out.println("xiao ming order " + chicagoPizza.getName());
     }
 }

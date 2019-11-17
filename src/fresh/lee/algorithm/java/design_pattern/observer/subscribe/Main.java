@@ -15,10 +15,9 @@ public class Main {
         station.setData(new WeatherData(WeatherData.WINDY, 10.0f), "朝阳区");
         station.setData(new WeatherData(WeatherData.RAIN, 10.0f), "朝阳区");
 
-//        station.removeSubscriber(farmer);
+        station.removeSubscriber(farmer);
         farmer.setTopic("海淀区");
-//        station.addSubscriber(farmer);
-        station.changeTopic(farmer);
+        station.addSubscriber(farmer);
 
         station.setData(new WeatherData(WeatherData.CLOUDY, 10.0f), "朝阳区");
         station.setData(new WeatherData(10, 10.0f), "朝阳区");
