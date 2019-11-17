@@ -1,7 +1,7 @@
 package fresh.lee.algorithm.java.design_pattern.singleton;
 
 public abstract class Singleton<T> {
-    private T mInstance;
+    private volatile T mInstance;
 
     protected abstract T create();
 
