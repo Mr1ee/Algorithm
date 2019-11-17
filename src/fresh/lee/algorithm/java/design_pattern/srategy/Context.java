@@ -20,11 +20,12 @@ public class Context implements IOperation<Integer> {
      * 策略模式+简单工厂 客户端（main）只认识Context，不认识IOperation也不认识OperationFactory
      * 进一步封装了代码，以后增加逻辑的话只需要新增一个类继承IOperation，并且在OperationFactory增加一个case即可，
      * 完全不需要改动客户端代码
-     *
-     * @param args
+     * <p>
+     * 策略模式定义了算法族，分别封装起来，让它们之间可以相互替换。
+     * 此模式让算法变化独立于使用算法的客户端。
      */
     public static void main(String[] args) {
-        Context context = new Context("+");
-        System.out.println(context.op(3, 4));
+        IOperation<Integer> operation = new Context("+");
+        System.out.println(operation.op(3, 4));
     }
 }
