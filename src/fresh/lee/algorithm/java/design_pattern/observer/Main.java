@@ -17,7 +17,7 @@ public class Main {
         secretary.attach(stock3);
         secretary.attach(nba1);
 
-        secretary.setEvent("Boss走！");
+        secretary.setEvent("Boss走了！");
         secretary.update();
 
         secretary.detach(stock3);
