@@ -4,7 +4,6 @@ public class ArrayQueue<T> implements IQueue<T> {
 
     private static final int DEFAULT_SIZE = 10;
     private int capacity;
-    private float factor = 0.5f;
     private int head;
     private int tail;
     private T[] array;
