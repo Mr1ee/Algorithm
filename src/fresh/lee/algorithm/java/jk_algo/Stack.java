@@ -2,6 +2,8 @@ package fresh.lee.algorithm.java.jk_algo;
 
 /**
  * 基于链表的栈
+ * <p>
+ * leetcode上关于栈的题目大家可以先做20,155,232,844,224,682,496.
  */
 public class Stack<T> implements IStack<T> {
     private Node<T> top;
