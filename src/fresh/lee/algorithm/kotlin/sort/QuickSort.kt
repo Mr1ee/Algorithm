@@ -2,6 +2,7 @@ package fresh.lee.algorithm.kotlin.sort
 
 import fresh.lee.algorithm.kotlin.sort.interfaces.ISort
 import java.util.*
+import java.util.Collections.swap
 
 /**
  * 快排 核心：partition 将给定的数组分成两部分，对每一个部分再次执行相同过程
@@ -42,5 +43,30 @@ class QuickSort : ISort<Int> {
         println("high = $high")
         println("quick sort, partition end : $data\n\n")
         return high
+    }
+
+    private fun quickWangZheng(a: IntArray, p: Int, r: Int) {
+        if (p >= r) {
+            return
+        }
+        val pivot = a[r]
+        var i = p
+        var j = p
+        while (j < r) {
+            if (a[j] < pivot) {
+                a.swap(i, j) // 交换
+                i++
+            }
+            j++
+        }
+        a.swap(i, j) // 交换
+        quickWangZheng(a, p, i - 1)
+        quickWangZheng(a, i + 1, r)
+    }
+
+    fun IntArray.swap(i: Int, j: Int) {
+        this[i] = this[i] xor this[j]
+        this[j] = this[i] xor this[j]
+        this[i] = this[i] xor this[j]
     }
 }

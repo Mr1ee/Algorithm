@@ -146,7 +146,7 @@ class RedBlackTree : BinarySearchTree<Int>() {
              * p? means p's color can be RED or BLACK, we need't care about it.
              *-------------------------------------------------------------------------------
              * (1)
-             *  x color is BLACK, b is RED, according DEFINITION 4, p、bl and br color must be RED
+             *  x color is BLACK, b is RED, according DEFINITION 4, p、bl and br color must be BLACK
              *  left rotation b, set b color BLACK, and set p color RED.
              *  [Tips] Notice that [b] is already RED, so we can't balance p-tree by reducing p's
              *  right subtree's BLACK node, then we need to add p's left subtree BLACK node.
