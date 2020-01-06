@@ -9,3 +9,8 @@ interface ProductionConsumer<T> {
     fun produce(): T
     fun consume(item: T)
 }
+
+interface ProductionConsumer2<out T, in R> {
+    fun produce(): T
+    fun consume(item: R)
+}

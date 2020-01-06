@@ -1,5 +1,39 @@
 package fresh.lee.algorithm.kotlin.paradigm
 
+/**
+ * In(逆变)
+ *
+ * 如果你的类是将泛型对象作为函数的参数，那么可以用 in：
+ *
+ * 可以称其为 consumer class/interface，因为其主要是消费指定泛型对象。
+ * 因此，可以这样来记：consume = input = in。
+ * 简单来说就是只能作为入参（或者只能set）
+ *
+ * 类似Java PECS（product Extends， consumer Supper ）
+ * P out， C in
+ */
+interface Consumer<in T> {
+    fun consume(item: T)
+}
+
+/**
+ * Out (协变)
+ *
+ * 如果你的类是将泛型作为内部方法的返回，那么可以用 out：
+ * 可以称其为 production class/interface，因为其主要是产生（produce）指定泛型对象。
+ * 因此，可以这样来记：produce = output = out。
+ *
+ * 因此，对于 out 泛型，我们能够将使用子类泛型的对象赋值给使用父类泛型的对象
+ * 简单来说就是只能作为出参（或者只能get）
+ *
+ * 类似Java PECS（product Extends， consumer Supper ）
+ * P out， C in
+ */
+interface Production<out T> {
+    fun produce(): T
+}
+
+
 class FoodStore : Production<Food> {
     override fun produce(): Food {
         println("Produce food")
