@@ -117,15 +117,20 @@ fun main() {
     //父类泛型对象可以赋值给子类泛型对象，用 in；
     //子类泛型对象可以赋值给父类泛型对象，用 out。
 
-    val foodlist: ArrayList<Food> = arrayListOf(Burger())
+    val foodlist: ArrayList<FastFood> = arrayListOf(Burger())
 
+    //只能set 能get，但是取得都是Any? 类型
     var foods: ArrayList<in FastFood> = arrayListOf()
 //    foods.add(Food()) //error ??? 这个很奇怪啊，为什么add Food？
     foods.add(FastFood())
     foods.add(Burger())
 //    foods.addAll(foodlist)  //error ??? 这个也很奇怪zzzz
-    foods = foodlist
+//    foods = foodlist
+    for (food in foods) {
 
+    }
+
+    // 只能get 不能set
     val foods2: ArrayList<out Food> = arrayListOf(Food(), FastFood(), Burger())
 //    foods2[4] = Burger() error
     for (food in foods2) {
