@@ -94,6 +94,20 @@ fun main() {
     (consumer2.consume(Burger()))
     (consumer3.consume(Burger()))
 
+    val consumer11: Consumer<Food> = Everybody()
+    val consumer22: Consumer<FastFood> = ModernPeople()
+
+    val list: ArrayList<Consumer<in Burger>> = arrayListOf()
+    list.add(consumer1)
+    list.add(consumer2)
+    list.add(consumer3)
+    list.add(consumer11)
+    list.add(consumer22)
+
+    for (consumer in list) {
+        consumer.consume(Burger())
+    }
+
 //    val consumer11 : Consumer<Food> = Everybody()
 //    val consumer22 : Consumer<Food> = ModernPeople()  // Error
 //    val consumer33 : Consumer<Food> = American()  // Error
@@ -103,4 +117,18 @@ fun main() {
     //父类泛型对象可以赋值给子类泛型对象，用 in；
     //子类泛型对象可以赋值给父类泛型对象，用 out。
 
+    val foodlist: ArrayList<Food> = arrayListOf(Burger())
+
+    var foods: ArrayList<in FastFood> = arrayListOf()
+//    foods.add(Food()) //error ??? 这个很奇怪啊，为什么add Food？
+    foods.add(FastFood())
+    foods.add(Burger())
+//    foods.addAll(foodlist)  //error ??? 这个也很奇怪zzzz
+    foods = foodlist
+
+    val foods2: ArrayList<out Food> = arrayListOf(Food(), FastFood(), Burger())
+//    foods2[4] = Burger() error
+    for (food in foods2) {
+        println(food.name)
+    }
 }

@@ -1,7 +1,7 @@
 package fresh.lee.algorithm.kotlin.paradigm
 
-open class Food {}
+open class Food(open val name: String = "food") {}
 
-open class FastFood : Food() {}
+open class FastFood(override val name: String = "fast food") : Food(name) {}
 
-class Burger : FastFood() {}
+class Burger(override val name: String = "burger") : FastFood(name) {}
