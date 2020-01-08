@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 /**
  * 基于链表的栈

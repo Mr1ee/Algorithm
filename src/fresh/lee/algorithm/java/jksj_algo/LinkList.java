@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 /**
  * 练习题LeetCode对应编号：206，141，21，19，876

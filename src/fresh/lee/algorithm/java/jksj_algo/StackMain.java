@@ -1,9 +1,8 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
-import java.util.Vector;
 
 public class StackMain {
 

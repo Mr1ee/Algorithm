@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 import java.util.ArrayList;
 import java.util.List;

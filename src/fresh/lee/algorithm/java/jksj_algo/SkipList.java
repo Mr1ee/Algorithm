@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 
 /**
@@ -123,6 +123,18 @@ public class SkipList {
 
             return builder.toString();
         }
+    }
+
+    public static void main(String[] args) {
+        /**
+         * A % B == A & (B - 1) 当且仅当B = 2 ^ n
+         *
+         * 原理，用二进制表示很清楚，例如 19 % 8
+         * 19  = 10011
+         * 8-1 =   111
+         * 所以19 & (8-1) 就相当于取19二进制后三位的值。就相当于取余。
+         */
+        System.out.println((17 % 4) == (17 & 3));
     }
 
 }

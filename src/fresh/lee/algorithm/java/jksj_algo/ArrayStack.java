@@ -1,4 +1,4 @@
-package fresh.lee.algorithm.java.jk_algo;
+package fresh.lee.algorithm.java.jksj_algo;
 
 public class ArrayStack<T> implements IStack<T> {
     private static final int DEFAULT_SIZE = 4;
