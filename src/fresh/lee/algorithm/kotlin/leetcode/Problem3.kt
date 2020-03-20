@@ -46,8 +46,14 @@ class Problem3 {
     }
 }
 
+enum class Week{
+    星期一,星期二,星期三,星期四,星期五,星期六,星期日
+}
 /** 我是main入口函数 **/
 fun main(args: Array<String>) {
+    println(Week.星期一.ordinal)
+    println(Week.星期六.ordinal)
+
     println(Problem3().lengthOfLongestSubstring("abcabcbb"))
     println(Problem3().lengthOfLongestSubstring(""))
     println(Problem3().lengthOfLongestSubstring(" "))
