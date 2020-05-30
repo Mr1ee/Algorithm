@@ -3,12 +3,21 @@ package fresh.lee.algorithm.java.classloader;
 public class StaticDispatch {
 
     static abstract class Human {
+        abstract public void sayHello();
     }
 
     static class Man extends Human {
+        @Override
+        public void sayHello() {
+            System.out.println("man say Hello!");
+        }
     }
 
     static class Woman extends Human {
+        @Override
+        public void sayHello() {
+            System.out.println("woman say Hello!");
+        }
     }
 
     public void sayHello(Human guy) {
@@ -38,6 +47,11 @@ public class StaticDispatch {
         // 输出
         //Hello , gentleman!
         //Hello , lady!
-    }
 
+        man.sayHello();
+        woman.sayHello();
+        // 输出
+        //man say Hello!
+        //woman say Hello!
+    }
 }
