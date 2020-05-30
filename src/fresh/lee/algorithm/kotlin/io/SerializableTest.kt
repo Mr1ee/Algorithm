@@ -4,7 +4,7 @@ import java.io.*
 
 fun main() {
     val lee = Person("lee", 28)
-    val dir = "/Users/yixinf-r/Desktop/wanandroid/Algorithm/src/fresh/lee/algorithm/kotlin/io"
+    val dir = "/Users/xxxx/Desktop/wanandroid/Algorithm/src/fresh/lee/algorithm/kotlin/io"
     val file = File(dir, "lee.obj")
     val oss = ObjectOutputStream(FileOutputStream(file))
     oss.writeObject(lee)
