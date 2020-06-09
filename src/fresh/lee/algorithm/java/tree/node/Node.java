@@ -21,6 +21,26 @@ public class Node<K, V> {
         this.parent = parent;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Node)) {
+            return false;
+        }
+
+        Node other = (Node) obj;
+        return this.key.equals(other.key) && this.value.equals(other.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return 31 * key.hashCode() + value.hashCode() + 17;
+    }
+
+    @Override
+    public String toString() {
+        return "[" + key + "," + value + "]";
+    }
+
     public Node<K, V> getLeft() {
         return left;
     }
@@ -108,6 +128,7 @@ public class Node<K, V> {
     /**
      * 前驱节点val值小于该节点val值并且值最大的节点
      * 后继节点val值大于该节点val值并且值最小的节点
+     *
      * @return 前驱结点
      */
     public Node<K, V> successor() {
@@ -130,6 +151,7 @@ public class Node<K, V> {
     /**
      * 前驱节点val值小于该节点val值并且值最大的节点
      * 后继节点val值大于该节点val值并且值最小的节点
+     *
      * @return 后继节点
      */
     public Node<K, V> predecessor() {

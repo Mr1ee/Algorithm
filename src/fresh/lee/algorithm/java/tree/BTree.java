@@ -9,7 +9,7 @@ import java.util.List;
 
 @SuppressWarnings("unused")
 public class BTree<K extends Comparable<K>, V> implements ITreeAction<K, V> {
-    Node<K, V> root = null;
+    public Node<K, V> root = null;
 
     @Override
     public boolean insert(K key, V value) {

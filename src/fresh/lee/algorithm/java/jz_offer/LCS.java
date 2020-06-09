@@ -5,7 +5,7 @@ public class LCS {
     public static void main(String[] args) {
         String a = "helloworld";
         String b = "loop";
-        System.out.println("字符串 :" + a + "和字符串：" + b + "的最长公共子序列长度是： " + findLCS(a, b, false));
+        System.out.println("字符串 :" + a + "和字符串：" + b + "的最长公共子序列长度是： " + findLCS(a, b, true));
     }
 
     /**
@@ -36,7 +36,7 @@ public class LCS {
                     res = Math.max(res, dp[i][j]);
                 } else {
                     if (sequence) {
-                        dp[i][j] = 0;
+//                        dp[i][j] = 0;
                     } else {
                         dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                     }
